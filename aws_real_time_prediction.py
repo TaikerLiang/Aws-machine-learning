@@ -34,7 +34,7 @@ if __name__ == "__main__":
     try:
         opts, args = getopt.getopt(argv,"hm:r:",["help", "model_id=", "record="])
     except getopt.GetoptError:
-        print "please type 'python aws_batch_prediction.py -h' to get more infomation."
+        print "please type 'python aws_real_time_prediction.py -h' to get more infomation."
         sys.exit(2)
 
     for opt, arg in opts:
@@ -45,6 +45,9 @@ if __name__ == "__main__":
             model_id = arg
         elif opt in ("-r", "--record"):
             record = ujson.loads(arg)
+
+    if model_id == '' or record == '':
+        print "You miss some parameters, please type python aws_real_time_prediction.py to get more infomation."
 
     main(model_id, record)
 
