@@ -46,13 +46,13 @@ First you need to create data source and model by using aws console of machine l
 
 ### parameter 
 
-model_id: use aws console to get.
-data source id: use aws console to get.
-output_url: s3 url.
-record: a json string.
-bucket_name: the name of bucket in s3.
-file_name: the name of file in s3.
-file_path: local file path.
+* model_id: use aws console to get.
+* data source id: use aws console to get.
+* output_url: s3 url.
+* record: a json string.
+* bucket_name: the name of bucket in s3.
+* file_name: the name of file in s3.
+* file_path: local file path.
 
 ### Author
 
