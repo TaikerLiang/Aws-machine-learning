@@ -25,7 +25,7 @@ First you need to create data source and model by using aws console of machine l
 
 1. for aws_batch_prediction.Python
 
-    python aws_batch_prediction.py -m <model_id> -d <data_source_id> -o <output_url>
+    python aws_batch_prediction.py -m [model_id] -d [data_source_id] -o [output_url]
 
     ex: python aws_batch_prediction.py -m ml-12345678901 -d ds-12345678901 -o s3://your-bucket/ml-output/
 
@@ -36,7 +36,7 @@ output_url: s3 url.
 
 2. for aws_real_time_prediction.Python
 
-    python aws_real_time_prediction.py -m <model_id> -r <record>
+    python aws_real_time_prediction.py -m [model_id] -r [record]
 
     ex: python aws_real_time_prediction.py -m ml-12345678901 --r '{"key1": val1, "key2": val2}'
 
@@ -46,7 +46,7 @@ record: a json string.
 
 3. for aws_upload_file_to_s3.py
 
-    python aws_upload_file_to_s3.py -b <bucket_name> -f <file_name> -p <file_path>
+    python aws_upload_file_to_s3.py -b [bucket_name] -f [file_name] -p [file_path]
 
     ex: python aws_upload_file_to_s3.py -b "bucket_name" -f "upload.tx" -p "/data/text.txt"
 
