@@ -25,9 +25,11 @@ First you need to create data source and model by using aws console of machine l
 
 1. for aws_batch_prediction.Python
 
+    ```
     python aws_batch_prediction.py -m [model_id] -d [data_source_id] -o [output_url]
 
     ex: python aws_batch_prediction.py -m ml-12345678901 -d ds-12345678901 -o s3://your-bucket/ml-output/
+    ```
 
 2. for aws_real_time_prediction.Python
 
